@@ -1,5 +1,83 @@
 html, body {
+    width: 100%;
+    height: 100%;
     margin: 0;
     padding: 0;
+    font-family: "Work Sans", sans-serif;
+    line-height: 1.6; 
+    background-color: whitesmoke;
+    scroll-behavior: smooth; }
+#wrapper {
     width: 100%;
-    height: 100%: }
+    height: 100%;
+    margin: 0; }
+#header {
+    position: relative;
+    width 100%;
+    height: auto;
+    background-color: brown; }
+#header-img {
+    display: inline-block;
+    vertical-align: middle;
+    background-color: blue;
+    width: 200px;
+    height: 200px; }
+#nav-bar {}
+.nav-link {
+    text-decoration: none; }
+#content {
+    width: 100%;
+    margin: 0 auto;
+    background-color: aqua; }
+#video {}
+#form {}
+#email {}
+#submit {}
+
+/* typography */
+
+h1 {
+    font-size: 1.5em;
+    margin: 2em; }
+h2 {
+    font-size: 1.2em;
+    margin: 2em 2em 0 2em; }
+h1, h2 {
+    font-family: "Poppins";
+    font-weight: 300;
+    text-transform: uppercase; }
+p {
+    font-weight: 300;
+    font-size: 1em;
+    margin: 1em 3em 3em 3em; }
+
+/* flex classes */
+
+.p {
+    margin: 0;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; }
+.jus-ctr {
+    justify-content: center; }
+.jus-end {
+    justify-content: flex-end; }
+.ali-ctr {
+    align-items: center; }
+.item {
+    background-color: blueviolet; }
+.f33 {
+    flex: 0 0 33.33%; }
+.f66 {
+    flex: 0 0 66.66%; }
+.f40 {
+    flex: 0 0 40%; }
+.f50 {
+    flex: 0 0 50%; }
+.f60 {
+    flex: 0 0 60%; }
+.f100 {
+    flex: 1 0 100%; }
+
+@media (max-width: 768px) {}
