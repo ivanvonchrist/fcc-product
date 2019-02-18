@@ -35,16 +35,19 @@ html, body {
     margin-right: 3rem; }
 .nav-link {
     margin: 0 1em;
-    font-weight: 700;
     text-decoration: none; }
 
 /* hero */
 
 #hero {
     color: white;
+    background-image: url(../images/pattern.png);
+    background-size: contain;
+    background-position: 85% bottom;
+    background-repeat: no-repeat;
     background-color: #E70E02; }
 #hero h1 {
-    margin: 3rem 5rem 0 5rem;
+    margin: 3rem 5rem 0rem 5rem;
     font-size: 2.5em;
     font-weight: bold;
     text-transform: none; }
@@ -72,13 +75,14 @@ html, body {
 .section, .item, #features, #plan, #testimonials {
     padding: 3em 0 3em 0; }
 .section h2, .item h2, #features h2, #plan h2, #testimonials h2 {
+    font-size: 1.5em;
     font-weight: 700; }
 .section i {
     display: inline-block;
     vertical-align: middle;
     font-size: 2em;
     color: #E70E02;
-    margin: 1em 0.5em 0 0; }
+    margin: 0.5em 0.5em 0 0; }
 .section input[type="button"] {
     font-weight: 700; }
 
@@ -91,6 +95,7 @@ ul {
     padding: 0;
     margin: 0;
     font-weight: 300;
+    text-align: center;
     list-style: none; }
 li:before {
     content: "\f00c";
@@ -115,7 +120,7 @@ li {
     -o-transition: .20s ease;
     transition: .20s ease; }
 .card:hover {
-    box-shadow: 3px 3px 3px #e1e1e1; }
+    box-shadow: 3px 3px 3px #d1d1d1; }
 .card h1, .card h2, .card h3 {
     font-family: "Lato", sans-serif;
     text-transform: none;
@@ -161,7 +166,7 @@ li {
     margin: -0.5em 0 0 -5em;
     border-radius: 50%;
     background-image: url("");
-    background-color: #e1e1e1; }
+    background-color: #E70E02; }
 #testimonials p {
     text-align: left;
     width: 30%;
@@ -175,7 +180,7 @@ li {
 
 #business {
     padding: 1em 0 1em 0;
-    background-color: #e1e1e1;
+    background-color: #f1f1f1;
     text-align: center; }
 #business img {
     display: inline-block;
@@ -283,30 +288,30 @@ input[type="submit"], input[type="button"] {
     -moz-appearance: none;
     appearance: none;
     margin-top: 1em;
-    padding: 0.7em;
+    padding: 0.4em 0.8em;
     font-family: "Poppins", sans-serif;
     font-weight: 300;
     color: white;
-    border: 0 solid #F42B03;
+    border: 0 solid #E70E02;
     border-width: 1px;
     border-radius: 4px;
-    background-color: #F42B03;
+    background-color: #E70E02;
     cursor: pointer;
     -webkit-transition: .20s ease;
     -o-transition: .20s ease;
     transition: .20s ease; }
 input[type="submit"]:hover, input[type="button"]:hover {
-    background-color: #E70E02;
-    border-color: #E70E02; }
+    background-color: #E84702;
+    border-color: #E84702; }
 input[type="text"], input[type="submit"]:focus, input[type="button"]:focus {
     outline: 0; }
 .alt {
-    color: #F42B03 !important;
-    border: 1px solid #F42B03 !important;
+    color: #E70E02 !important;
+    border: 1px solid #E70E02 !important;
     background-color: white !important; }
 .alt:hover {
-    color: #E70E02 !important;
-    border: 1px solid #E70E02 !important; }
+    color: #E84702 !important;
+    border: 1px solid #E84702 !important; }
 
 /* typography */
 
@@ -326,6 +331,7 @@ p {
     font-size: 1em;
     margin: 1em 5rem 1em 5rem; }
 a {
+    font-weight: 400;
     color: white;
     -webkit-transition: .20s ease;
     -o-transition: .20s ease;
@@ -366,6 +372,8 @@ a:hover {
     flex: 0 0 50%; }
 .f60 {
     flex: 0 0 60%; }
+.f80 {
+    flex: 0 0 80%; }
 .f100 {
     flex: 1 0 100%; }
 .g0 {
@@ -394,9 +402,13 @@ a:hover {
     #nav-bar a {
         display: block;
         margin: 1em 1em; }
+    #hero {
+        background-image: none; }
     #hero h1 {
+        text-align: center;
         margin: 3rem 2rem; }
     #hero p {
+        text-align: center;
         margin: 1rem 2rem 3rem 2rem; }
     .item img {
         width: 75%;
@@ -449,5 +461,5 @@ a:hover {
         margin: 1em 1em 0 1em; }
     .jus-end {
         justify-content: center; }
-    .f33, .f66, .f20, .f25, .f40, .f50, .f60 {
+    .f33, .f66, .f20, .f25, .f40, .f50, .f60, .f80 {
         flex: 1 0 100%; }}
